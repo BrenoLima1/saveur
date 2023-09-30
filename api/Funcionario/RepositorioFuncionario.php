@@ -1,6 +1,6 @@
 <?php
 
-interface RepositorioFuncionarioDAO
+interface RepositorioFuncionario
 {
     public function login(Funcionario $funcionario);
 

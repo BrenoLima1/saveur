@@ -1,11 +1,11 @@
 <?php
 
-require_once ('RepositorioFuncionarioDAO.php');
+require_once ('RepositorioFuncionario.php');
 require_once ('Funcionario.php');
 require_once('FuncionarioException.php');
 require_once('./Reserva/Reserva.php');
 
-class FuncionarioDAO implements RepositorioFuncionarioDAO{
+class FuncionarioDAO implements RepositorioFuncionario{
 
     private $pdo;
     public function __construct(PDO $pdo) {
@@ -18,8 +18,8 @@ class FuncionarioDAO implements RepositorioFuncionarioDAO{
         try {
             $ps = $this->pdo->prepare('SELECT * FROM funcionarios WHERE login = ?');
             $ps->execute([$funcionario->getLogin()]);
-            $ps->setFetchMode(PDO::FETCH_ASSOC);
-            $data = $ps->fetch();
+            // $ps->setFetchMode(PDO::FETCH_ASSOC);
+            $data = $ps->fetch(PDO::FETCH_ASSOC);
 
             if (!$data || !password_verify( $funcionario->getSenha(), $data['senha'])) {
                 return null;

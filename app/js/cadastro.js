@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", (event)=> {
+  validarSessao();
+});
+
+
 document.getElementById("reservar").addEventListener("click", async (event) => {
   event.preventDefault();
   reserva();
@@ -99,4 +104,28 @@ function confirmarReserva(diaDasemana){
   : horario < '11:00' || horario > '20:00'
   ? alert('Entre quinta-feira e domingo, o hoário de funcionamento é somente entre 11:00 e 22:00')
   : true;
+}
+
+async function validarSessao(){
+
+  await fetch("/saveur/api/sessao", {
+    method: "GET",
+  })
+    .then(async (resposta) => {
+
+      if (resposta.status == 401) {
+        document.querySelector('body').style.display = 'none';
+        location.href = "/saveur/app/html/login.html";
+      }else if (!resposta.ok) {
+        document.querySelector('body').style.display = 'none';
+        alert("ERRO : " + resposta.status + '\nNão autorizado');
+        return;
+      }
+    })
+    .catch((e) => {
+      document.querySelector('body').style.display = 'none';
+      alert("ERRO : " + e.message);
+      location.href = "/saveur/app/html/login.html";
+      return;
+    });
 }

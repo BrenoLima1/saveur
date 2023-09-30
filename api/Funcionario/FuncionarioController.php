@@ -26,7 +26,7 @@ class FuncionarioController {
             }
         } catch (FuncionarioException $e) {
             http_response_code(500);
-            die($e->getMessage());
+            throw new Exception($e->getMessage());
         }
     }
 
@@ -47,7 +47,7 @@ class FuncionarioController {
 
             return $validacao;
         } catch (FuncionarioException $e) {
-            die($e->getMessage());
+            throw new Exception($e->getMessage());
         }
     }
 
@@ -56,7 +56,7 @@ class FuncionarioController {
         try {
             return $this->funcionarioDAO->listarReservas();
         } catch (FuncionarioException $e) {
-            die($e->getMessage());
+            throw new Exception($e->getMessage());
         }
     }
 
@@ -65,7 +65,7 @@ class FuncionarioController {
         try {
             return $this->funcionarioDAO->cancelarReserva($idReserva);
         } catch (FuncionarioException $e) {
-            die($e->getMessage());
+            throw new Exception($e->getMessage());
         }
     }
 }
