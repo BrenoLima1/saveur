@@ -1,0 +1,168 @@
+html {
+    /* width: 100%; */
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    background-image: url(https://img.freepik.com/fotos-premium/textura-de-grama-verde-pode-ser-usada-como-plano-de-fundo_35652-803.jpg);
+    background-size: cover;
+  }
+
+  header {
+    background-color: rgb(230, 198, 60);
+    height: 60px;
+    width: 100%;
+  }
+
+  header ul {
+    text-align: right;
+    display: inline-flex;
+    margin-right: 3%;
+    float: right;
+  }
+
+  header ul li a {
+    margin-left: 12px;
+    text-decoration: none;
+    color: rgb(2, 60, 75);
+    padding: 0px 0px 0px 2px;
+    font-weight: bold;
+    text-shadow: rgb(175 156 226) 0.1em 0.1em 0.2em;
+  }
+
+  header li {
+    margin: 9;
+    list-style: none;
+    color: blue;
+  }
+
+  #divForm {
+    text-align: center;
+    max-width: 350px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    display: table;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgb(255, 244, 161);
+    border-radius: 10%;
+    width: 40%;
+    border: solid rgb(255, 149, 0);
+  }
+
+  form {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  form input {
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  form input[type="submit"] {
+    width: 30%;
+    margin-top: 10;
+    background-color: rgba(242, 244, 196, 0.841);
+    height: 40px;
+    font-size: large;
+    border: solid rgb(255, 253, 240);
+    border-radius: 20%;
+    cursor: pointer;
+  }
+
+  form input[type="submit"]:hover {
+    background-color: rgb(241, 178, 116);
+  }
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  thead tr th h3{
+    color: #eee;
+  }
+
+  table{
+    background-image: url('https://cdn.pixabay.com/photo/2020/02/01/17/24/grass-4810843_960_720.jpg');
+    background-size: cover;
+    overflow-y: auto;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 60px;
+    background-color: #000000;
+    box-shadow: 0 0 10px rgb(250 250 250);
+    text-align: center;
+    margin: 0 auto;
+    color: cadetblue;
+  }
+
+  footer:hover {
+    color: white;
+    background-color: #3d3c3c;
+  }
+
+  output{
+    color: red;
+  }
+
+button{
+    background-color: rgb(247, 46, 46);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+tbody tr:hover{
+    background-color: rgb(241, 99, 99);
+}
+
+table {
+    width: 100%;
+    border: 2px solid #eee;
+    border-collapse: collapse;
+  }
+
+  thead tr th{
+      border: 2px solid #eee;
+      padding: 10px !important;
+  }
+
+  tr {
+    border: 2px solid #eee;
+    width: 100%;
+    text-align: center;
+  }
+
+  tr > td {
+    border: 2px solid #eee;
+    padding: 10px !important;
+    color: white;
+    font-weight: 900;
+  }
+
+  #listagemReservas{
+    text-align: center;
+    /* color: rgb(90, 245, 90); */
+    color: rgb(213 245 227);
+    text-decoration: underline;
+  }
+
+  .container{
+    overflow-x: auto;
+  }

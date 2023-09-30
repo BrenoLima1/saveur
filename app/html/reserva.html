@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/cadastro.js" defer></script>
+    <title>🥞 La Saveur 🥞</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="reservas.html">|Listar reservas|</a></li>
+            <li><a href="reserva.html">|Cadastrar reserva|</a></li>
+            <li><a href="./login.html">|Sair|</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div id="divForm">
+        <h1>😀Faça a sua reserva!</h1>
+        <hr>
+        <form action="" method="post">
+            <h3><label for="cliente">Nome do cliente</label></h3>
+            <input type="text" name="cliente" id="cliente">
+            <h3><label for="dia">Dia</label></h3>
+            <input type="date" name="dia" id="dia">
+            <h3><label for="horario">Horario</label></h3>
+            <input type="time" name="horario" id="horario">
+            <h3><label for="mesa">Mesa</label></h3>
+            <select name="mesa" id="mesa">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input type="hidden" name="id" id="id">
+                <hr>
+                🥞🥐
+                <input type="submit" id="reservar" value="Reservar"/>
+                🥐🥞
+        </form>
+        <output></output>
+    </div>
+</body>
+</html>
