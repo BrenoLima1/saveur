@@ -307,4 +307,7 @@ O projeto utiliza alguns mecanismos de segurança:
 
 ## 👨‍💻 Autor
 
-Desenvolvido como projeto de aplicação web para gerenciamento de reservas de restaurante.
+**Breno Lima**
+
+- GitHub: [@BrenoLima1](https://github.com/BrenoLima1)
+- LinkedIn: [Breno Lima](https://www.linkedin.com/in/breno-lima1)
